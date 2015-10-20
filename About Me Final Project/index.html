@@ -1,0 +1,174 @@
+<!-- 
+5 - Effort/completion
+5 - Code cleanliness
+5 - Overall command of material
+5 - Leveraging skills learned (using responsive design, HTML/CSS/JS, plugins, etc..)
+
+To be perfectly honest, you nailed it. Even your responsive layout is implemented so well. 
+
+Maybe, Maybe, if I had to pick something, I'd encourage you to work with colors that have more contrast. The black text on grey background and the grey text on grey background are a hard to read. 
+
+oh, I also just noticed that your responsive navigation covers the text. That's definitely something to correct. I'm not sure off the top of my head what the solution is, but let me know if you need some help finding a solution.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <meta name="mary's scrolling resume" content="A generalized idea of me">
+  <title>Portfolio for Mary E. Ellis</title>
+</head>
+<body>
+
+<!--Hamburger Menu--> 
+<div id="hamburger"><a href="#" id="nav-toggle" data-options="scrolltop:false;">
+  <span>
+  </span>
+</a>
+</div>
+<!-- Intro panel -->
+<header>
+    <span class="titletext">Mary E. Ellis</span>
+</header>
+
+<!-- Navigation that's gonna stick to the top! -->
+
+ <div class="nav-wrapper">  
+  <nav id="main-nav" class="nav" data-options="scrolltop:false;">
+    <a href="#section1">
+      <span class="topnav">Live</span>
+    </a>
+    <a href="#section2">
+      <span class="topnav">Background</span>
+    </a>
+    <a href="#section3">
+      <span class="topnav">Hats</span>
+    </a>
+    <a href="#section4">
+      <span class="topnav">Numbers</span>
+    </a>
+    <a href="#section5">
+      <span class="topnav">Contact</span>
+    </a>
+  </nav>
+</div>
+
+<!-- Some content type stuff about me - hopefully of the impressive variety -->
+<div class="character">  
+</div>
+  <div class="mantra">I believe in loud laughter, big smiles, hard work, and new challenges.
+  </div>
+  <div class="anchor" id="section1"></div>
+  <div class="about">
+    <div class="plane">
+        <img src="images/airplane.png">
+    </div>
+    <div class="tx">
+      <span>I grew up in Dallas...</span>
+    </div>
+    <div class="nc">
+      <span>...went to college in Raleigh...</span>
+    </div>
+    <div class="ny">
+      <span>...and landed in New York City.</span>
+    </div>
+  </div>
+  <div class="anchor" id="section2"></div>
+  <div class="overview">
+  <!-- Real career info -->
+    <div class="education">
+      <ul>
+        <span>"Do What You Love"</span>
+        <li>B.A. World Literature</li>
+        <li>B.A. Film Studies</li>
+      </ul>
+    </div>
+    <div class="career">
+      <ul>
+        <span>"Love What You Do"</span>
+          <li>Finance Manager</li>
+          <li>Project Manager</li>
+          <li>Music Festival Director</li>
+          <li>(Can you tell I like running things?)</li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <div class="anchor" id="section3"></div>
+  <div class="skills">
+    <img src="images/hats.jpg">
+    <ul class="hats">
+      <h2>"My Hats"</h2>
+      <li>Time(line) Lord</li> <!-- Doctor Who reference to impress Arthur ;) -->
+      <li>Purse-string Holder</li>
+      <li>Payroll Guru</li>
+      <li>Excel Mastermind</li>
+      <li>Resource Finagler</li>
+      <li>Smile Inducer</li>
+      <li>Pizza Nom-er</li>
+      <li>Book Devourer</li>
+    </ul>
+  </div>
+  <div class="anchor" id="section4"></div>
+  <div class="numbers">
+    <ul class="highlights">
+      <h2>Highlights</h2>
+      <li>(@MediaHive) Solely managed cash flow, accounts payable, accounts receivable, and budgeting of $5 million ops</li>
+      <li>(@CCM) Managed $350,000 semi-monthly payroll for 175 employees and 100 contractors</li>
+      <li>(@CCM) Managed accounts payable, accounts receivable, and budgets for $6 million ops</li>
+      <li>(@NCMA) Managed the $2.2 million furniture, fixtures and equipment (FF&E) budget for the 2010 West Building Expansion</li>
+      <li>(@NCMA) Planned 200-person VIP guest gala for the Blue Loop trail opening</li>
+      <li>(@SPARKcon) Grew the musicSPARK festival from 25 acts in 6 venues to over 100 musical acts across 15 venues</li>
+    </ul>
+</div>
+  <div class="banner">
+  </div>
+
+
+<!-- Footer with basic social media info & contact form -->
+<footer>
+  <div class="anchor" id="section5"></div>
+  <contact>
+      <span class="calltoaction">Let's get started!</span>
+      <div class="socialmedia">
+        <!-- Open source images ftw -->
+        <a href="https://www.facebook.com/mary.e.ellis"><img src="images/facebook.png"></a>
+        <a href="https://www.linkedin.com/in/maryeellis"><img src="images/linkedin.png"></a>
+        <a href="http://www.twitter.com/maryellis"><img src="images/twitter.png"></a>
+        <a href="http://www.instagram.com/mary_e_ellis"><img src="images/instagram.png"></a>
+      </div>
+    <form action="#">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+      </div>
+      <div>
+        <label for="select-choice">Type of Fixing Needed:</label>
+        <select name="select-choice" id="select-choice">
+          <option value="Choice 1">Project Management</option>
+          <option value="Choice 2">Operations</option>
+          <option value="Choice 3">Finances</option>
+          <option value="Choice 4">Payroll</option>
+          <option value="Choice 5">World Domination</option>
+        </select>
+      </div>
+      <div>
+        <label for="textarea">Description of the Problem:</label>
+        <textarea rows="8" name="textarea" id="textarea"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form> 
+  </contact>
+</footer>
+
+
+<!--Jquery and javascript code -->
+<script src="js/lib/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

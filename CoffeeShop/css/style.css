@@ -1,0 +1,259 @@
+/* css file for coffee shop project */
+
+body {
+	background-color: white;
+	font-family: 'arial';
+}
+.container {
+	background-color: white;
+	width: 975px;
+	margin: 0 auto;
+}
+
+.header img {
+	width: 100%;
+}
+
+nav {
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	width: 9%;
+	margin: 0;
+	background-color: #191919;
+	font-size: .9em;
+	padding: 9px;
+	margin-left: -3px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	position: relative;
+}
+
+li:hover {
+	background-color: #5C2E00;
+}
+
+/* For the hidden drop down menus */
+nav ul li ul {
+	visibility: hidden;
+	float: left;
+  min-width: 175px;
+  position: absolute;
+  transition: visibility 0.2s ease-in;
+	left: 0;
+	z-index: 999;
+	margin-top: 12px;
+	margin-left: 2px;
+	opacity: .9;
+	border: 1px white;
+}
+
+nav ul li ul li {
+	clear: both;
+	font-size: .9em;
+	padding: 9px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: block;
+	width: 100%;
+	border: 1px grey solid;
+}
+
+/* Show drop down menus*/
+nav ul li:hover > ul,
+nav ul li ul:hover {
+   visibility: visible;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+		-webkit-transition-timing-function: ease;
+		transition-timing-function: ease;
+
+}
+
+h1 {
+	font-family: 'Passion One', cursive;
+	font-size: 6em;
+	margin: 0 auto;
+	padding-top: 50px;
+	width: 100%;
+	font-weight: bolder;
+}
+h2 {
+	font-size: 1.5em;
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+}
+.total-container {
+	position: relative;
+	height: 154px;
+	width: 975px;
+	overflow: hidden;
+}
+.photo-container {
+	box-sizing: border-box;
+	position: relative;
+	height: 154px;
+	width: 930px;
+	overflow: hidden;
+	float: left;
+}
+.arrow-left {
+	width: 10px;
+    height: 154px;
+    padding-top: 75px;
+    padding-right: 5px;
+	float: left;
+    cursor: pointer;
+}
+.arrow-right {
+	width: 10px;
+    height: 154px;
+    float: right;
+    padding-top: 75px;
+    cursor: pointer;
+}
+.photos img {
+	margin: 5px;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+.photos {
+	height: 154px;
+	width: 6000px;
+	float: left;
+}
+.main {
+	box-sizing: border-box;
+	margin-top: 25px;
+	width: 100%;
+}
+.blog {
+	position: relative;
+	float: left;
+	width: 620px;
+	line-height: 1.3em;
+	font-size: .9em;
+	margin-bottom: 15px;
+}
+article {
+	padding-top: 25px;
+}
+.blog img {
+	float: left;
+	padding-right: 15px;
+}
+
+/* Side bar */
+.side {
+	position: relative;
+	float: right;
+	width: 325px;
+	font-size: .8em;
+}
+.social {
+	height: 96px;
+	background-color: #E6E6E6;
+	margin: 10px;
+	padding-left: 25px;
+}
+.social img {
+	display: inline-block;
+	padding-top: 24px;
+}
+.cart {
+	height: 96px;
+	background-color: #E6E6E6;
+	margin: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.cart span {
+	padding-left: 25px;
+}
+.coffeemonth {
+	height: 450px;
+	background-color: #E6E6E6;
+	margin: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.coffeemonth img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.coffeemonth span {
+	text-align: center;
+}
+.facts {
+	height: 200px;
+	background-color: #E6E6E6;
+	margin: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-style: italic;
+}
+.facts p {
+	font-weight: normal;
+}
+.newsletter {
+	height: 96px;
+	background-color: #E6E6E6;
+	margin: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+/* Footer section */
+footer {
+	clear: both;
+	background-color: black;
+	height: 250px;
+	border-top: 4px solid grey;
+	box-sizing: border-box;
+}
+.addresses1 {
+	box-sizing: border-box;
+	float: left;
+	width: 33%;
+	color: white;
+	font-size: .7em;
+	font-weight: bold;
+	height: 200px;
+	line-height: 1.5em;
+	padding-left: 18%;
+	padding-top: 40px;
+}
+.logo {
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+}
+.logo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+}
+.addresses2 {
+	box-sizing: border-box;
+	float: left;
+	width: 33%;
+	color: white;
+	font-size: .7em;
+	height: 200px;
+	line-height: 1.5em;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-left: 3%;
+}
+
+
+
+

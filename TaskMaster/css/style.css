@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: grey;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#tasks-to-do {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#newTaskInput {
+  margin-bottom: 10px;
+}
+
+.selected {
+  text-decoration: line-through;
+}
+
+

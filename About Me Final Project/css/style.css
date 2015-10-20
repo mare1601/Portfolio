@@ -1,0 +1,515 @@
+
+@font-face {
+  font-family: 'choplin';
+  src: url('../fonts/choplin-medium-demo.otf');
+  src: local('â˜º'), url('../fonts/choplin-medium-demo.otf') format('otf');
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #666666;
+  overflow-x: hidden;
+}
+header {
+  font-size: 50px;
+  font-family: 'choplin', serif;
+  font-weight: 400;
+  color: white;
+  padding-top: 200px;
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  background-color: #666666;
+  transition: all 1.5s ease;
+}
+
+/* Navigation styling and div help */
+.anchor {
+  visibility: hidden;
+  height: 70px;
+}
+.nav {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  margin-top: 0;
+  padding-top: 20px;
+  height: 50px;
+  width: 100%;
+  z-index: 9999;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  overflow: hidden;
+}
+.nav-wrapper {
+  height: 50px;
+}
+.nav-wrapper .nav.fixed {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0,0,0,.0);
+  display: inline-block;
+}
+
+/* The real content styling stuff */
+#content {
+  padding-top: 300px;
+}
+.character {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+/* open source images ftw */
+}
+.mantra {
+  font-size: 30px;
+  color: white;
+  padding: 10%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.about {
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  width: auto;
+  background-color: lightgrey;
+  padding: 10%;
+}
+.tx {
+  text-align: left;
+  padding-bottom: 50px;
+}
+.nc {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-right: 8%;
+}
+.ny {
+  text-align: right;
+}
+
+/* Animation time - watch the airplane soar... */
+
+.plane img {
+  display: none;
+}
+
+.fly img {
+  display: block;
+  position: absolute;
+  -ms-transform: rotate(107deg); /* IE 9 */
+  -webkit-transform: rotate(107deg); /* Chrome, Safari, Opera */
+  transform: rotate(107deg);
+  -webkit-animation: play 6s forwards;
+  animation-name: flyacross;
+}
+@keyframes flyacross {
+  from {
+    margin-left: -30%;
+    margin-top: -20%;
+  }
+  to {
+    margin-left: 100%;
+    margin-top: 18%;
+  }
+}
+
+/* Real career info */
+.overview {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  width: 100%;
+  background-color: #666666;
+  margin: auto;
+  padding: 10%;
+  padding: auto;
+  display: block;
+  text-align: left;
+  background-image: url('../images/ampersand.png');
+  background-repeat: no-repeat;
+  background-position: 37%;
+  background-size: 20%;
+}
+.education {
+  display: inline-block;
+  width: 35%;
+  margin-left: 10%;
+  float: left;
+}
+.career {
+  display: inline-block;
+  width: 30%;
+  margin: auto;
+  margin-right: 25%;
+}
+.skills {
+  background-color: lightgrey;
+  text-align: center;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+.hats {
+  display: inline-block;
+  background-color: #666666;
+  padding: 10px 70px 30px 70px;
+  box-shadow: 0px 0px 4px #888888;
+  line-height: 2;
+  color: white;
+  text-align: left;
+}
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+.skills img {
+  height:200px;
+  width: 200px;
+  border-radius: 125px;
+  display: inline;
+  margin-right: 15%;
+  box-shadow: 2px 2px 2px #888888;
+  margin-bottom: 60px;
+}
+.banner {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #666666;
+  width: 100%;
+  background-image: url(https://s3.amazonaws.com/StartupStockPhotos/uploads/41.jpg);
+/* open source images ftw */
+}
+.numbers {
+  background-color: #666666;
+  margin: auto;
+}
+.highlights {
+  display: inline-block;
+  width:50%;
+  margin: 0% 20% 10% 20%;
+}
+.highlights h2 {
+  text-align: center;
+}
+.highlights li {
+  padding: 5px;  
+}
+.calltoaction {
+  font-size: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+/* Footer stuff starts here */
+footer {
+  padding-top: 50px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+footer img {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+form {
+  padding: 5%;
+  float: center;
+}
+#name {
+  width: 60%;
+}
+#textarea {
+  width: 60%;
+}
+#select-choice {
+  width: 60%;
+}
+form div {
+  padding-bottom: 10px;
+}
+label {
+  display: block;
+}
+
+/* Media Queries...aaaaaand go! */
+
+/* Biggest stuff! Large Screens! */
+@media (min-width: 950px) {
+  #name {
+    width: 40%;
+  }
+  #textarea {
+    width: 40%;
+  }
+  #select-choice {
+    width: 40%;
+  }
+  #nav-toggle {
+    display: none;
+  }
+  #hamburger {
+    display: none;
+  }
+  .nav {
+    display: inline-block!important;
+  }
+  #main-nav {
+    display: inline-block!important;
+  }
+}
+
+/* Middle stuff! Like ipads! */
+@media (min-width: 500px) and (max-width: 1100px) {
+  .skills {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .skills img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+  .overview {
+    font-size: 1.2em;
+    display: block;
+    width: auto;
+    height: 250px;
+    padding: auto;
+    margin: auto;
+    text-align: left;
+    padding-left: 25%;
+    background-image: url('../images/ampersand.png');
+    background-repeat: no-repeat;
+    background-position: 2%;
+    background-size: 30%;
+  }
+
+  #name {
+    width: 80%;
+  }
+  #textarea {
+    width: 80%;
+  }
+  #select-choice {
+    width: 80%;
+  }
+  .nav-show {
+    display: none;
+  }
+  .nav {
+   display:block!important; 
+  }
+  #main-nav {
+    display: inline-block!important;
+  }
+  .education {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-left: 100px;
+  }
+  .career {
+    display: block;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    margin-left: 100px;
+  }
+  #nav-toggle {
+    display: none;
+  }
+  #hamburger {
+    display: none;
+  }
+  .character {
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+  /* open source images ftw */
+  }
+  .banner {
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://s3.amazonaws.com/StartupStockPhotos/uploads/41.jpg);
+  /* open source images ftw */
+  }
+  .fly img {
+    display: block;
+    position: absolute;
+    -ms-transform: rotate(107deg); /* IE 9 */
+    -webkit-transform: rotate(107deg); /* Chrome, Safari, Opera */
+    transform: rotate(107deg);
+    -webkit-animation: play 5s forwards;
+    animation-name: flyacross;
+  }
+  @keyframes flyacross {
+    from {
+      margin-left: -30%;
+      margin-top: -20%;
+    }
+    to {
+      margin-left: 100%;
+      margin-top: 18%;
+    }
+  }
+  .highlights {
+    display: inline-block;
+    width:70%;
+    margin: 0% 10% 10% 10%;
+    font-size: 1em;
+  }
+  .highlights h2 {
+    text-align: center;
+  }
+  .highlights li {
+  padding: 5px;  
+  }
+}
+
+/* Small screens! Like iphones! */
+@media (max-width: 500px) {
+  header {
+    height: 250px;
+  }
+  .fly {
+    display: none;
+  }
+  .character {
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+  /* open source images ftw */
+  }
+  .banner {
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://s3.amazonaws.com/StartupStockPhotos/uploads/41.jpg);
+  /* open source images ftw */
+  }
+  .about {
+    font-size: 1em;
+  }
+  .mantra {
+    font-size: 1.2em;
+    margin: 10%;
+    padding: 10%;  
+  }
+  .overview {
+    font-size: 1em;
+    display: block;
+    width: auto;
+    height: 250px;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .education {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .career {
+    display: block;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+  }
+  .hats {
+    box-shadow: none;
+    background-color: lightgrey;
+    text-align: left;
+    border: 0;
+    padding-left: auto;
+    padding-right: auto;
+    color: black;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+  } 
+  .nav {
+    display: none;
+  }
+  #main-nav {
+    border: 1px solid transparent;
+  }
+  .nav-show {
+    clear: both;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    width: 100%;
+    z-index: 9999;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: left;
+    position: fixed;
+    top: 40px;
+    overflow: hidden;
+    scrolltop: false;
+  }
+  .nav-show a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    padding-left: 30px;
+    border-bottom: 1px solid lightgrey;
+  }
+  #nav-toggle { 
+    position: fixed; 
+    left: 90%; 
+    top: 1%; 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px;
+    width: 100%;
+    z-index: 9999;
+  }
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  #nav-toggle span:before {
+    top: -10px; 
+  }
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+}
