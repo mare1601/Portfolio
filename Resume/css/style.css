@@ -1,0 +1,332 @@
+/* css file for resume 2015 */
+/* For more easter-egg style comments, check the html */
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: lightgrey;
+	line-height: 1.5em;
+	font-size: .9em;
+}
+.wrapper {
+	background-color: white;
+	margin: 60px 120px 80px 120px;
+	border: solid 1px darkgrey;
+}
+h1 {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.75em;
+}
+h2 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 1.1em;
+	text-align: center;
+}
+.header {
+	border-top: 30px solid black;
+}
+.contact {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.contact a {
+	text-decoration: none;
+	color: red;
+}
+.bio {
+	width: 50%;
+	text-align: justify;
+	margin: 0 auto;
+	margin-top: 15px;
+	line-height: 1.2em;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+}
+
+/* Various skills, primarily ones pertinent for a dev job */
+.skills {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.skills h3 {
+	background-color: black;
+	color: white;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+.programming {
+	width: 33%;
+	float: left;
+	margin: 0 auto;
+}
+.skills li {
+	padding-left: 20px;
+	border-left: 1px dashed black;
+}
+.learning {
+	width: 33%;
+	float: left;
+}
+.soft-skills {
+	width: 33%;
+	float: left;
+}
+
+/* Links to code repositories */
+.code-links {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.code-links a {
+	text-decoration: none;
+	clear: both;
+}
+.code-links li {
+	display: inline-block;	
+}
+.code-links li a img {
+	height: 100px;
+	width: 100px;
+	margin: 5px 25px;
+	margin-top: 20px;
+}
+.code-links li:first-child a img {
+	height: 97px;
+	width: 97px;
+	margin-bottom: 6px;
+}
+
+/* Past Life */
+.experience {
+	margin: 0 auto;
+	display: block;
+	width: 75%;
+	margin-top: 50px;
+}
+
+/* Education stylez */
+.education {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	border-top: 30px solid black;
+	padding-top: 20px;
+}
+.education h2 {
+	margin-bottom: 20px;
+}
+.education ul {
+	display: inline-block;
+	width: 22%;
+}
+.education img {
+	height: 100px;
+	width: 100px;
+}
+
+/* Work history */
+.prior-work h3 div {
+	border-bottom: 1px dashed black;
+	margin: 10px auto 0px auto;
+	display: inline-block;
+}
+.prior-work {
+	width: 100%;
+	padding-top: 20px;
+	border-top: 30px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.description {
+	clear: both;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: justify;
+	line-height: 1.2em;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.old-workplace {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.old-title {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+footer {
+	height: 50px;
+	margin-top: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* Commence the responsiveness */
+/* For tiny phone screens! Are you checking out my resume while on-the-go? Cool! Thanks! */
+@media (max-width: 500px) {
+	.bio {
+		width: 80%;
+	}
+	.wrapper {
+		margin: 0 auto;
+	}
+	.skills {
+		width: 75%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.skills h3 {
+		background-color: black;
+		color: white;
+		padding: 3px;
+		margin-bottom: 5px;
+		width: 100%;
+	}
+	.programming {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.skills li {
+		list-style-type: disc;
+		margin-left: 40px;
+		border-left: 0px dashed black;
+		padding-left: 5px;
+	}
+	.learning {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.soft-skills {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.education {
+		width: 100%;
+	}
+	.education ul {
+		display: block;
+		width: 100%;
+	}
+	.education img {
+		margin: 10px;
+	}
+	.prior-work h3 {
+		text-align: center;
+	}
+	.prior-work h3 div {
+		border-bottom: 0px;
+		margin: 0px auto 0px auto;
+		text-align: center;
+		display: block;
+	}	
+	.old-workplace {
+		width: 100%;
+	}
+	.old-title {
+		width: 100%;
+	}
+	.description {
+		padding-top: 5px;
+		padding-bottom: 30px;
+		border-top: 1px dashed black;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+/* Middle-sized fixes */
+@media (min-width: 501px) and (max-width: 900px) {
+	.skills {
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.skills h3 {
+		background-color: black;
+		color: white;
+		padding: 3px;
+		margin-bottom: 5px;
+		width: 100%;
+	}
+	.programming {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.skills li {
+		list-style-type: disc;
+		margin-left: 40px;
+		border-left: 0px dashed black;
+		padding-left: 5px;
+	}
+	.learning {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.soft-skills {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+/* iPad type stuff? You should be paying attention in your meeting, but if you want to scope my resume right now, that's cool, too! */
+@media (min-width: 501px) and (max-width: 1100px) {
+	.bio {
+		width: 60%;
+	}
+	.wrapper {
+		margin: 5% 5%;
+	}
+	.education {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		clear: both;
+	}
+	.education ul {
+		clear: both;
+		display: block;
+		width: 100%;
+	}
+	.education img {
+		margin: 10px;
+	}
+	.jobs h2 {
+		margin-top: 40px;
+	}
+	.prior-work h3 {
+		text-align: center;
+	}
+	.prior-work h3 div {
+		border-bottom: 0px;
+		margin: 0px auto 0px auto;
+		text-align: center;
+		display: block;
+	}	
+	.old-workplace {
+		width: 100%;
+	}
+	.old-title {
+		width: 100%;
+	}
+	.description {
+		padding-top: 5px;
+		padding-bottom: 30px;
+		border-top: 1px dashed black;
+		width: 100%;
+	}
+}
