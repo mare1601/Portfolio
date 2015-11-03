@@ -138,6 +138,7 @@ h3 {
 }
 
 /* Work history */
+
 .prior-work h3 div {
 	border-bottom: 1px dashed black;
 	margin: 10px auto 0px auto;
@@ -179,6 +180,83 @@ footer {
 }
 
 /* Commence the responsiveness */
+/* I sincerely hope you want to print this...though equally, saving trees is a good call */
+@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact;
+  }
+}
+@media print {
+	h1 {
+		margin-top: 20px;
+	}
+	.bio {
+		display: none;
+	}
+	.skills {
+		width: 100% !important;
+		margin: 0 auto;
+		margin-top: 0px;
+		font-size: .8em;
+	}
+	.skills h3 {
+		background: black !important;
+		color: white !important;
+		padding: 3px;
+		margin-bottom: 5px;
+	}
+	.programming {
+		width: 33% !important;
+		float: left;
+	}
+	.skills li {
+		padding-left: 20px;
+		border-left: 1px dashed black;
+	}
+	.learning {
+		width: 33% !important;
+		float: left;
+	}
+	.soft-skills {
+		width: 34% !important;
+		float: left;
+	}
+	.code-links li {
+		margin: 0 15px;
+	}
+	.code-links a:link:after, 
+	.code-links a:visited:after { 
+		content: " (" attr(href) ") "; 
+		font-size: 80%; 
+		display: block;
+	}
+	.experience {
+		width: 100%;
+		margin-top: 30px;
+	}
+	.education {
+		page-break-after: always;
+	}
+	.education img {
+		width: 50px;
+		height: 50px;
+	}
+	.education ul {
+		display: inline-block !important;
+		width: 24% !important;
+	}
+	.jobs {
+		width: 100%;
+	}
+	.wrapper {
+		margin: 0 0;
+		border: 0;
+	}
+	footer {
+		display: none;
+	}
+}
 /* For tiny phone screens! Are you checking out my resume while on-the-go? Cool! Thanks! */
 @media (max-width: 500px) {
 	.bio {
@@ -227,6 +305,9 @@ footer {
 	.education img {
 		margin: 10px;
 	}
+	.jobs {
+		width: 100%;
+	}
 	.prior-work h3 {
 		text-align: center;
 	}
@@ -235,6 +316,11 @@ footer {
 		margin: 0px auto 0px auto;
 		text-align: center;
 		display: block;
+	}
+	.prior-work {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
 	}	
 	.old-workplace {
 		width: 100%;
@@ -295,7 +381,6 @@ footer {
 		width: 100%;
 		margin: 0 auto;
 		text-align: center;
-		clear: both;
 	}
 	.education ul {
 		clear: both;
@@ -307,6 +392,10 @@ footer {
 	}
 	.jobs h2 {
 		margin-top: 40px;
+	}
+	.prior-work {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.prior-work h3 {
 		text-align: center;
@@ -327,6 +416,5 @@ footer {
 		padding-top: 5px;
 		padding-bottom: 30px;
 		border-top: 1px dashed black;
-		width: 100%;
 	}
 }
