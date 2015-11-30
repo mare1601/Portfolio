@@ -54,6 +54,7 @@ for(var i=0; i < phraseSlots.length; i++){
       failedAttempt += 1;
 
       if(failedAttempt >= 6){
+        limbs.children[failedAttempt].style.display = "block";
         alert('Oh no! RIP you!');
         window.location.reload(true);
         {break;};
