@@ -4,17 +4,41 @@
   <meta charset="UTF-8">
     <title>Hangman - A game of chance with violent consequences</title>
     <!-- external CSS link -->
-<!--    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
--->
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 </head>
 <body> 
-  <div class="hangman">
-  </div>
+  <h1>Hangman</h1>
+  <h2>a game of chance with violent consequences</h2>
+  <form>
+  <input id="start" type="button" onclick="startFunction()" value="Start Playing"/>
+  </form>
   <div class="thephrase">
-    <ul id="letters">
-    </ul>
+    <ul id="letters"></ul>
   </div>
+  <div id="hangman">
+    <div class="head">
+      O
+    </div>
+    <div class="torso">
+      |
+    </div>
+    <div class="arm1">
+      \
+    </div>
+    <div class="arm2">
+      /
+    </div>
+    <div class="leg1">
+      /
+    </div>
+    <div class="leg2">
+      \
+    </div>
+  </div>
+
 <script src="js/main.js"></script>
 </body>
 </html>

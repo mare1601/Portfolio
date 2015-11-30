@@ -1,4 +1,5 @@
-var challenge = prompt('Player 1 : Enter a phrase')
+function startFunction(){
+var challenge = prompt('Player 1 : Enter a phrase');
 var phrase = challenge.toUpperCase();
 var phraseSplit = phrase.split("");
 var phraseLength = phraseSplit.length;
@@ -29,7 +30,7 @@ for(var i=0; i < phraseSlots.length; i++){
   else if (phraseSlots[i] === " "){
     var spaces = document.createTextNode(' ');
     guessSpots.appendChild(spaces);
-    document.getElementById('letters').appendChild(guessSpots);
+    document.getElementById('letters').appendChild(guessSpots).style.backgroundColor = "white";
   }
 };
 
@@ -47,8 +48,11 @@ for(var i=0; i < phraseSlots.length; i++){
       }
     };
     if (letterLocation[0] == null){
+      var limbs = document.getElementById('hangman');
       alert('No ' + letter + ' in this phrase! Gettin dangerous!');
+      limbs.children[failedAttempt].style.display = "block";
       failedAttempt += 1;
+
       if(failedAttempt >= 6){
         alert('Oh no! RIP you!');
         window.location.reload(true);
@@ -64,14 +68,13 @@ for(var i=0; i < phraseSlots.length; i++){
 letterLocation=[];
     //Printing the phrase
       for(var i=0; i < phraseSlots.length; i++){
-        if(phraseSlots[i] === " "){
-          var spaces = document.createTextNode(' ');
-          guessSpots.appendChild(spaces);
-          document.getElementById('letters').appendChild(guessSpots);
-        }
-        else if(phraseSlots[i] == letter){
-          var letterPlaced = document.createTextNode(letter);
+        var letterPlaced = document.createTextNode(letter);
+        var hasChildren = document.getElementsByClassName('slots')[i].hasChildNodes();
+        if(phraseSlots[i] == letter && hasChildren == false){
           document.getElementsByClassName('slots')[i].appendChild(letterPlaced);
+        }
+        else if(phraseSlots[i] == letter && hasChildren == true){
+          alert('Whoops! Already guessed that letter! Try again!');
         }
       };
     }
@@ -80,4 +83,6 @@ letterLocation=[];
 }
 if (JSON.stringify(phraseSlots)==JSON.stringify(phraseSplit)==true){
         alert('You saved yourself! Congrats!');
+        window.location.reload(true);
       }
+}
