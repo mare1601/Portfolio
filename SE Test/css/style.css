@@ -1,12 +1,13 @@
 body{
   width: 100%;
 }
+
 img {
   position: absolute;
-  height: 160%;
-  top: -120px;
+  height: 550px;
+  top: -140px;
   left: -30px;
-  clip: rect(140px, 800px, 350px, 50px);
+  clip: rect(160px, 800px, 370px, 50px);
   }
 .image {
   box-sizing: border-box;
