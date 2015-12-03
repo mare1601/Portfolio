@@ -1,7 +1,6 @@
 body{
   width: 100%;
 }
-
 img {
   position: absolute;
   height: 550px;
@@ -28,7 +27,7 @@ img {
 .text {
   position: absolute;
   top: 25px;
-  left: 20px;
+  left: 35px;
   z-index: 1;
   padding: 10px;
 }
@@ -62,4 +61,39 @@ span:last-child{
   background-color: white;
   opacity: 1;
   font-size: 1.2em;
+}
+@media (min-width: 500px) and (max-width: 750px) {
+  img {
+    width: 100%;
+  }
+  .image {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media (min-width: 200px) and (max-width: 500px) {
+  img {
+    height: 100%;
+    width: 114%;
+    clip: rect(5%, 25%, 15%, 5%);
+    margin: 0 auto;
+    left: -15%;
+  }
+  .image {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
+  .title-box {
+    width: 100%;
+    left: 0px;
+  }
+  .text {
+    box-sizing: border-box;
+    left: 0px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 5% 15px 5%;
+  }
 }
