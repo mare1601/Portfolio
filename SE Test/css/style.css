@@ -1,6 +1,11 @@
 body{
   width: 100%;
+  text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
+/* Gonna be honest, I'm not diggin this "clip" thing - and "clip-path" has its own issues and isn't super browser friendly */
 img {
   position: absolute;
   height: 550px;
@@ -30,7 +35,9 @@ img {
   left: 35px;
   z-index: 1;
   padding: 10px;
+  text-decoration: none;
 }
+/* Again, unsure of the font, but this worked ok - thank Google */
 span {
   color: #555;
   display: block;
@@ -38,6 +45,7 @@ span {
   font-weight: 800;
   text-align: center;
   padding: 3px;
+  text-decoration: none;
 }
 span:first-child {
   border-top: 1px solid orange;
@@ -62,6 +70,7 @@ span:last-child{
   opacity: 1;
   font-size: 1.2em;
 }
+/* Middle size fixes - the clip property still bugs me */
 @media (min-width: 500px) and (max-width: 750px) {
   img {
     width: 100%;
@@ -72,6 +81,7 @@ span:last-child{
     overflow: hidden;
   }
 }
+/* I looked at how the original image was responsive, but it was just an image, so I just overlaid the text over the image for the smaller version to keep the text legible */
 @media (min-width: 200px) and (max-width: 500px) {
   img {
     height: 100%;
