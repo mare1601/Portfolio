@@ -1,0 +1,19 @@
+* When submitting your results also include a brief description of how you approached the problem.  
+
+I'd done some absolute positioning with text overlays in the past so I just pulled those up to reference them. However, I hadn't dealt with clipping an image and I knew that was the first thing that needed tackling so I took to stackoverflow and google to find answers. I still don't think, for the purposes of the Serious Eats website, that it was the most elegant solution, but it does meet your requirements. Then I just html'ed and css'ed it, tossed in some responsiveness (which, having seen how you handled the element on your website, I decided to go a slightly different route, keeping the text more prominent for ease of reading, and downplaying the image as just a subtle background). With the need for the absolute positioning for the clipped image, it was a little less quick, but nothing too bad.
+
+* What tools did you use?  
+
+Sublime Text 2, Browserstack, Chrome...it didn't require anything too crazy, though in my ideal world I'd also use photoshop to crop that image ;)
+
+* What was your workflow?  
+
+Research for the one piece I wasn't sure about, then HTML, css, Responsive (though I always keep responsiveness in mind while doing my original css), and after checking everything in Chrome using the device mode, I also checked it in Browserstack
+
+* What, if any, challenges did you over come?  
+
+Again, just the clip property.
+
+* How did you approach browser/device testing?
+
+Chrome 'inspect element' using the device mode, but then also Browserstack to just double check for IE, primarily, though I knew the css I'd used was pretty basic and likely wouldn't have any real problems (and it didn't), otherwise I'd have checked it along the way.
