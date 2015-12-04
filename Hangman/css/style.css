@@ -51,7 +51,7 @@ form {
   font-size: 100px;
   position: relative;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
 }
 .torso {
   display: none;
