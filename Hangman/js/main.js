@@ -76,7 +76,7 @@ letterLocation=[];
         }
         else if(phraseSlots[i] == letter && hasChildren == true){
           alert('Whoops! Already guessed that letter! Try again!');
-          return false;
+          {continue;}
         }
       };
     }
