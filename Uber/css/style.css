@@ -1,0 +1,62 @@
+/* css file for uber project */
+body {
+	width: 320px;
+	height: 568px;
+	font-family: 'Lato', sans-serif;
+}
+.nav-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 200px;
+	height: 100%;
+	background: black;
+	color: white;
+	-webkit-transition: all 500ms;
+	transition: all 500ms;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+.nav-menu::after {
+	display: none;
+}
+.nav-menu-open .nav-menu {
+	visibility: visible;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+header {
+	background-color: #d3d3d3;
+}
+h1 {
+	text-align: center;
+	padding: 15px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+} 
+.container {
+	background-color: white;
+} 
+#hamburger {
+	width: 45px;
+	height: 100%;
+	float: left;
+} 
+span {
+	padding: 0px;
+	margin: 3px;
+	margin-left: 20px;
+	background-color: black;
+	width: 18px;
+	height: 2px;
+	display: block;
+}
+.top {
+	margin-top: 18px;
+}
+#map {
+	height: 100%;
+}
+
+

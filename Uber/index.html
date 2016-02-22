@@ -1,0 +1,54 @@
+<!-- This is actively trying to recreate the UI for the Uber app - it is not meant to take from them, steal the code (I did not look at their code) or anything else other than be a learning tool for me - any problems let me know mary.e.ellis@gmail.com and I will refactor in any way necessary to keep everyone happy. Picture to recreate: http://cdn.pttrns.com/531/6218_f.jpg -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Falschen</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="menu-container">
+    <nav class="nav-menu">
+        <h2>Your Name Here</h2>
+        <ul>
+          <li>Payment</li>
+          <li>History</li>
+          <li>Help</li>
+          <li>Free Rides</li>
+          <li>Promotions</li>
+          <li>Notifications</li>
+          <li>Settings</li>
+          <li>About</li>      
+        </ul>    
+    </nav>
+    <div class="container">
+      <header>
+        <!--Hamburger Menu--> 
+        <div id="hamburger">
+          <span class="top hamburger-menu"></span>
+          <span class="hamburger-menu"></span>
+          <span class="hamburger-menu"></span>
+        </div>
+        <!-- Falschen means fake in German, and since I'm making a fake Uber page, it seemed fitting -->
+        <h1>Falschen</h1>
+      </header>
+      <div id="map">
+      </div>
+      <div class="model">
+      </div>
+      <div class="ride">
+      </div>
+    </div>
+  </div>  
+  
+<script src="js/lib/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7WJ5NTe1qqa7tfPiLgCroI2T4p-bHdx8&callback=initMap">
+    </script>
+</body>
+</html>
