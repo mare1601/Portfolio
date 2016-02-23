@@ -1,0 +1,66 @@
+/* css file for airbnb project */
+
+body {
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+}
+/* Just picked a background image from googling "ireland"...not mine */
+.container {
+	background-image: url('../images/ireland.jpg');
+	background-color: white;
+	width: 600px;
+	height: 800px;
+	margin: 20px auto;
+	text-align: center;
+	border: 1px solid lightgrey;
+}
+.search {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 50%;
+	width: 560px;
+}
+/* General styles for the inputs */
+input {
+	padding: 15px;
+	border: 0;
+	margin: 0;
+	display: inline-block;
+	float: left;
+	font-size: .8em;
+	height: 25px;
+}
+img {
+	width: 62px;
+	display: inline-block;
+	float: left;
+}
+/* Specific styles for the inputs */
+.place {
+	padding-left: 0px;
+	margin: 0;
+	width: 240px;
+	font-size: 1em;
+}
+.in {
+	margin: 0;
+	width: 65px;
+	padding-right: 2px;
+}
+.out {
+	padding-left: 2px;
+	margin: 0;
+	width: 50px;
+}
+.guests {
+	border-left: 1px solid #e5e5e5;
+	width: 55px;
+}
+/* Basically the bottom nav styles */
+li img {
+	display: inline-block;
+	float: left;
+	width: 75px;
+	padding: 20px;
+	margin-top: 72%;
+}

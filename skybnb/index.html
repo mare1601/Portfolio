@@ -1,0 +1,49 @@
+<!-- this is actively trying to recreate the mobile airbnb website - it is not meant to take from them, steal the code (I did not look at their code) or anything else other than be a learning tool for me - any problems let me know mary.e.ellis@gmail.com and I will refactor in any way necessary to keep everyone happy. Also: I love using airbnb, for the record.  
+
+Original inspiration was obviously airbnb, but then MY task was recreating this:
+http://cdn.pttrns.com/86/5398_f.jpg -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+    <title>skybnb</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="js/lib/jquery-ui.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <!--This area to account for any white space on responsive -->
+    <div class="main">
+      <div class="search">
+        <img src="images/location.png">
+        <input class="place" id="searchTextField" type="text" placeholder="Where are you going?" autocomplete="on">
+        <input class="in" type="text" placeholder="Check In" id="datepicker">
+        <input class="out" type="text" placeholder="- Out" id="datepicker2">
+        <input class="guests" type="text" placeholder="1 Guest" id="guests">
+      </div>
+    </div>
+
+  <footer>
+    <!-- This area for the bottom nav -->
+    <ul class="nav">
+      <li><a href="#"><img src="images/skybnb.jpg"></a></li>
+      <li><a href="#"><img src="images/search.jpg"></a></li>
+      <li><a href="#"><img src="images/messages.jpg"></a></li>
+      <li><a href="#"><img src="images/trips.jpg"></a></li>
+      <li><a href="#"><img src="images/profile.png"></a></li>
+    </ul>
+  </footer>
+</div>
+<script src="js/lib/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script>
+<script src="js/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEfXoiQdM27Tamp_TKFsxUAEu3c8iS-SY&libraries=places"></script>
+
+</body>
+</html>
